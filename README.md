@@ -15,7 +15,7 @@ Cocoapods is the recommended installation method. Just add this line to your Pod
 Usage
 -----
 
-Integration LHFontSelectionViewController into your project is pretty straightforward. You just need to instantiate the controller, assign a delegate, and then define the required methods in your delegate.
+Integrating LHFontSelectionViewController into your project is pretty straightforward. You just need to instantiate the controller, assign a delegate, and then define the required methods in your delegate.
 
 Here's a quick example:
 
@@ -50,3 +50,4 @@ The above implementation lets you be flexible in how your implement LHFontSelect
     return [Theme fontSize] + 4;
 }
 ```
+
