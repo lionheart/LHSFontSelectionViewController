@@ -6,6 +6,8 @@ Pod::Spec.new do |s|
     :type => 'Apache 2.0',
     :file => 'LICENSE' }
 
+  s.homepage     = "http://lionheartsw.com/"
+
   s.author       = { "Dan Loewenherz" => "dan@lionheartsw.com" }
   s.platform     = :ios, '7.0'
   s.source       = {
