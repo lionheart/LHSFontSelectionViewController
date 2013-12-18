@@ -14,7 +14,6 @@
 
 - (NSString *)fontNameForFontSelectionViewController:(LHFontSelectionViewController *)viewController;
 - (void)setFontName:(NSString *)fontName forFontSelectionViewController:(LHFontSelectionViewController *)viewController;
-
 - (CGFloat)fontSizeForFontSelectionViewController:(LHFontSelectionViewController *)viewController;
 
 @end
