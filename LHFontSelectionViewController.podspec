@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.source       = {
     :git => "https://github.com/lionheart/LHFontSelectionViewController.git",
-    :tag => "v#{spec.version}"
+    :tag => "v#{s.version}"
   }
 
   s.source_files  = 'Protocols/*.h', 'Classes/*.{h,m}'
