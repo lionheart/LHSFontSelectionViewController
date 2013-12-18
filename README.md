@@ -19,28 +19,34 @@ Integration LHFontSelectionViewController into your project is pretty straightfo
 
 Here's a quick example:
 
-    LHFontSelectionViewController *fontSelectionViewController = [[LHFontSelectionViewController alloc] init];
-    fontSelectionViewController.delegate = self;
-    [self.navigationController pushViewController:fontSelectionViewController];
+```objc
+LHFontSelectionViewController *fontSelectionViewController = [[LHFontSelectionViewController alloc] init];
+fontSelectionViewController.delegate = self;
+[self.navigationController pushViewController:fontSelectionViewController];
+```
 
 Your delegate must conform to LHFontSelecting, which defines these methods:
 
-    fontNameForFontSelectionViewController:
-    setFontName:forFontSelectionViewController:
-    fontSizeForFontSelectionViewController:
+```objc
+fontNameForFontSelectionViewController:
+setFontName:forFontSelectionViewController:
+fontSizeForFontSelectionViewController:
+```
 
 The above implementation lets you be flexible in how your implement LHFontSelectionViewController. Here's an example of how I'm using them in a production app:
 
-    #pragma mark - LHFontSelecting
+```objc
+#pragma mark - LHFontSelecting
 
-    - (NSString *)fontNameForFontSelectionViewController:(LHFontSelectionViewController *)viewController {
-        return [[NSUserDefaults standardUserDefaults] stringForKey:SettingsFontNameKey];
-    }
+- (NSString *)fontNameForFontSelectionViewController:(LHFontSelectionViewController *)viewController {
+    return [[NSUserDefaults standardUserDefaults] stringForKey:SettingsFontNameKey];
+}
 
-    - (void)setFontName:(NSString *)fontName forFontSelectionViewController:(LHFontSelectionViewController *)viewController {
-        [[NSUserDefaults standardUserDefaults] setObject:fontName forKey:SettingsFontNameKey];
-    }
+- (void)setFontName:(NSString *)fontName forFontSelectionViewController:(LHFontSelectionViewController *)viewController {
+    [[NSUserDefaults standardUserDefaults] setObject:fontName forKey:SettingsFontNameKey];
+}
 
-    - (CGFloat)fontSizeForFontSelectionViewController:(LHFontSelectionViewController *)viewController {
-        return [Theme fontSize] + 4;
-    }
+- (CGFloat)fontSizeForFontSelectionViewController:(LHFontSelectionViewController *)viewController {
+    return [Theme fontSize] + 4;
+}
+```
