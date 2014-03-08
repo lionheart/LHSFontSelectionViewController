@@ -11,6 +11,8 @@
 
 @interface LHFontSelectionViewController : UITableViewController
 
+@property (nonatomic) BOOL onlyShowPreferredFonts;
+@property (nonatomic, strong) NSMutableArray *preferredFontNames;
 @property (nonatomic, strong) NSMutableArray *fonts;
 @property (nonatomic, strong) NSString *currentFontName;
 @property (nonatomic, strong) UISlider *slider;
@@ -19,6 +21,8 @@
 @property (nonatomic, strong) UIActionSheet *sizeAdjustmentActionSheet;
 @property (nonatomic, strong) id<LHFontSelecting> delegate;
 
-- (NSIndexPath *)indexPathForFontName:(NSString *)font;
+- (NSArray *)indexPathsForFontName:(NSString *)fontName;
+- (instancetype)initWithPreferredFontNames:(NSArray *)fontNames
+                    onlyShowPreferredFonts:(BOOL)onlyShowPreferredFonts;
 
 @end
