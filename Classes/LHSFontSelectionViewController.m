@@ -6,7 +6,7 @@
 //
 //
 
-#import "LHTableViewCellValue1.h"
+#import "LHSTableViewCellValue1.h"
 #import "LHSFontSelectionViewController.h"
 
 static NSString *CellIdentifier = @"Cell";
@@ -75,7 +75,7 @@ static NSString *CellIdentifier = @"Cell";
     
     [[NSNotificationCenter defaultCenter] addObserver:self.tableView selector:@selector(reloadData) name:UIContentSizeCategoryDidChangeNotification object:nil];
     
-    [self.tableView registerClass:[LHTableViewCellValue1 class] forCellReuseIdentifier:CellIdentifier];
+    [self.tableView registerClass:[LHSTableViewCellValue1 class] forCellReuseIdentifier:CellIdentifier];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LHFontSelecting.h"
+#import "LHSFontSelecting.h"
 
 @interface LHSFontSelectionViewController : UITableViewController
 
@@ -19,7 +19,7 @@
 @property (nonatomic, strong) NSMutableArray *sectionIndexTitles;
 @property (nonatomic, strong) NSMutableDictionary *fontsForSectionIndex;
 @property (nonatomic, strong) UIActionSheet *sizeAdjustmentActionSheet;
-@property (nonatomic, strong) id<LHFontSelecting> delegate;
+@property (nonatomic, strong) id<LHSFontSelecting> delegate;
 
 - (NSArray *)indexPathsForFontName:(NSString *)fontName;
 - (instancetype)initWithPreferredFontNames:(NSArray *)fontNames
