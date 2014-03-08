@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LHFontSelecting.h"
 
-@interface LHFontSelectionViewController : UITableViewController
+@interface LHSFontSelectionViewController : UITableViewController
 
 @property (nonatomic) BOOL onlyShowPreferredFonts;
 @property (nonatomic, strong) NSMutableArray *preferredFontNames;

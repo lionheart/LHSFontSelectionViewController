@@ -10,7 +10,7 @@
 
 @class LHFontSelectionViewController;
 
-@protocol LHFontSelecting <NSObject>
+@protocol LHSFontSelecting <NSObject>
 
 - (NSString *)fontNameForFontSelectionViewController:(LHFontSelectionViewController *)viewController;
 - (void)setFontName:(NSString *)fontName forFontSelectionViewController:(LHFontSelectionViewController *)viewController;

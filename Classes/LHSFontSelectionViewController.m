@@ -7,15 +7,15 @@
 //
 
 #import "LHTableViewCellValue1.h"
-#import "LHFontSelectionViewController.h"
+#import "LHSFontSelectionViewController.h"
 
 static NSString *CellIdentifier = @"Cell";
 
-@interface LHFontSelectionViewController ()
+@interface LHSFontSelectionViewController ()
 
 @end
 
-@implementation LHFontSelectionViewController
+@implementation LHSFontSelectionViewController
 
 - (instancetype)initWithPreferredFontNames:(NSArray *)fontNames onlyShowPreferredFonts:(BOOL)onlyShowPreferredFonts {
     self = [super initWithStyle:UITableViewStyleGrouped];

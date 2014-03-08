@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		37405C2A1861E75B0052213A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37405C291861E75B0052213A /* Foundation.framework */; };
 		37405C4E1861E7A60052213A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37405C4D1861E7A60052213A /* UIKit.framework */; };
-		37405C601861EBA60052213A /* LHFontSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C5F1861EBA60052213A /* LHFontSelectionViewController.m */; };
-		37405C631861EBD00052213A /* LHTableViewCellValue1.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C611861EBD00052213A /* LHTableViewCellValue1.m */; };
+		37405C601861EBA60052213A /* LHSFontSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C5F1861EBA60052213A /* LHSFontSelectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,15 +25,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		37405C261861E75B0052213A /* libLHFontSelectionViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLHFontSelectionViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37405C261861E75B0052213A /* libLHSFontSelectionViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLHSFontSelectionViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		37405C291861E75B0052213A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		37405C2D1861E75B0052213A /* LHFontSelectionViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LHFontSelectionViewController-Prefix.pch"; sourceTree = "<group>"; };
+		37405C2D1861E75B0052213A /* LHSFontSelectionViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LHSFontSelectionViewController-Prefix.pch"; sourceTree = "<group>"; };
 		37405C4D1861E7A60052213A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		37405C5E1861EBA60052213A /* LHFontSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LHFontSelectionViewController.h; path = Classes/LHFontSelectionViewController.h; sourceTree = SOURCE_ROOT; };
-		37405C5F1861EBA60052213A /* LHFontSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LHFontSelectionViewController.m; path = Classes/LHFontSelectionViewController.m; sourceTree = SOURCE_ROOT; };
-		37405C611861EBD00052213A /* LHTableViewCellValue1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LHTableViewCellValue1.m; path = Classes/LHTableViewCellValue1.m; sourceTree = SOURCE_ROOT; };
-		37405C621861EBD00052213A /* LHTableViewCellValue1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LHTableViewCellValue1.h; path = Classes/LHTableViewCellValue1.h; sourceTree = SOURCE_ROOT; };
-		37405C641861EBD90052213A /* LHFontSelecting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LHFontSelecting.h; path = Protocols/LHFontSelecting.h; sourceTree = SOURCE_ROOT; };
+		37405C5E1861EBA60052213A /* LHSFontSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LHSFontSelectionViewController.h; path = Classes/LHSFontSelectionViewController.h; sourceTree = SOURCE_ROOT; };
+		37405C5F1861EBA60052213A /* LHSFontSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LHSFontSelectionViewController.m; path = Classes/LHSFontSelectionViewController.m; sourceTree = SOURCE_ROOT; };
+		37405C641861EBD90052213A /* LHSFontSelecting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LHSFontSelecting.h; path = Protocols/LHSFontSelecting.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +50,7 @@
 		37405C191861E6410052213A = {
 			isa = PBXGroup;
 			children = (
-				37405C2B1861E75B0052213A /* LHFontSelectionViewController */,
+				37405C2B1861E75B0052213A /* LHSFontSelectionViewController */,
 				37405C281861E75B0052213A /* Frameworks */,
 				37405C271861E75B0052213A /* Products */,
 			);
@@ -62,7 +59,7 @@
 		37405C271861E75B0052213A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37405C261861E75B0052213A /* libLHFontSelectionViewController.a */,
+				37405C261861E75B0052213A /* libLHSFontSelectionViewController.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,23 +73,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		37405C2B1861E75B0052213A /* LHFontSelectionViewController */ = {
+		37405C2B1861E75B0052213A /* LHSFontSelectionViewController */ = {
 			isa = PBXGroup;
 			children = (
-				37405C641861EBD90052213A /* LHFontSelecting.h */,
-				37405C611861EBD00052213A /* LHTableViewCellValue1.m */,
-				37405C621861EBD00052213A /* LHTableViewCellValue1.h */,
-				37405C5E1861EBA60052213A /* LHFontSelectionViewController.h */,
-				37405C5F1861EBA60052213A /* LHFontSelectionViewController.m */,
+				37405C641861EBD90052213A /* LHSFontSelecting.h */,
+				37405C5E1861EBA60052213A /* LHSFontSelectionViewController.h */,
+				37405C5F1861EBA60052213A /* LHSFontSelectionViewController.m */,
 				37405C2C1861E75B0052213A /* Supporting Files */,
 			);
+			name = LHSFontSelectionViewController;
 			path = LHFontSelectionViewController;
 			sourceTree = "<group>";
 		};
 		37405C2C1861E75B0052213A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				37405C2D1861E75B0052213A /* LHFontSelectionViewController-Prefix.pch */,
+				37405C2D1861E75B0052213A /* LHSFontSelectionViewController-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -100,9 +96,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37405C251861E75B0052213A /* LHFontSelectionViewController */ = {
+		37405C251861E75B0052213A /* LHSFontSelectionViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37405C471861E75B0052213A /* Build configuration list for PBXNativeTarget "LHFontSelectionViewController" */;
+			buildConfigurationList = 37405C471861E75B0052213A /* Build configuration list for PBXNativeTarget "LHSFontSelectionViewController" */;
 			buildPhases = (
 				37405C221861E75B0052213A /* Sources */,
 				37405C231861E75B0052213A /* Frameworks */,
@@ -112,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = LHFontSelectionViewController;
+			name = LHSFontSelectionViewController;
 			productName = LHFontSelectionViewController;
-			productReference = 37405C261861E75B0052213A /* libLHFontSelectionViewController.a */;
+			productReference = 37405C261861E75B0052213A /* libLHSFontSelectionViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +121,7 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 37405C1D1861E6410052213A /* Build configuration list for PBXProject "LHFontSelectionViewController" */;
+			buildConfigurationList = 37405C1D1861E6410052213A /* Build configuration list for PBXProject "LHSFontSelectionViewController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -137,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37405C251861E75B0052213A /* LHFontSelectionViewController */,
+				37405C251861E75B0052213A /* LHSFontSelectionViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -147,8 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37405C601861EBA60052213A /* LHFontSelectionViewController.m in Sources */,
-				37405C631861EBD00052213A /* LHTableViewCellValue1.m in Sources */,
+				37405C601861EBA60052213A /* LHSFontSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +187,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LHFontSelectionViewController/LHFontSelectionViewController-Prefix.pch";
+				GCC_PREFIX_HEADER = "LHFontSelectionViewController/LHSFontSelectionViewController-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -207,7 +202,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LHSFontSelectionViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -235,7 +230,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LHFontSelectionViewController/LHFontSelectionViewController-Prefix.pch";
+				GCC_PREFIX_HEADER = "LHFontSelectionViewController/LHSFontSelectionViewController-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -244,7 +239,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LHSFontSelectionViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
@@ -254,7 +249,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37405C1D1861E6410052213A /* Build configuration list for PBXProject "LHFontSelectionViewController" */ = {
+		37405C1D1861E6410052213A /* Build configuration list for PBXProject "LHSFontSelectionViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37405C1E1861E6410052213A /* Debug */,
@@ -263,7 +258,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37405C471861E75B0052213A /* Build configuration list for PBXNativeTarget "LHFontSelectionViewController" */ = {
+		37405C471861E75B0052213A /* Build configuration list for PBXNativeTarget "LHSFontSelectionViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37405C481861E75B0052213A /* Debug */,
