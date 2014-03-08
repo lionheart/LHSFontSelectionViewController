@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "LHFontSelectionViewController"
+  s.name         = "LHSFontSelectionViewController"
   s.version      = "0.0.2"
   s.summary      = "An easy way to let users select fonts in iOS."
   s.license      = {
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author       = { "Dan Loewenherz" => "dan@lionheartsw.com" }
   s.platform     = :ios, '7.0'
   s.source       = {
-    :git => "https://github.com/lionheart/LHFontSelectionViewController.git",
+    :git => "https://github.com/lionheart/LHSFontSelectionViewController.git",
     :tag => "v#{s.version}"
   }
 
