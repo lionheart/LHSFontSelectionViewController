@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "LHFontSelectionViewController"
-  s.version      = "0.0.1"
-  s.summary      = "An easy way to let users update fonts in your iOS application."
+  s.version      = "0.0.2"
+  s.summary      = "An easy way to let users select fonts in iOS."
   s.license      = {
     :type => 'Apache 2.0',
     :file => 'LICENSE' }
