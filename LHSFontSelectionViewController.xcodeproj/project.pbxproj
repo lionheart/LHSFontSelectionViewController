@@ -81,8 +81,7 @@
 				37405C5F1861EBA60052213A /* LHSFontSelectionViewController.m */,
 				37405C2C1861E75B0052213A /* Supporting Files */,
 			);
-			name = LHSFontSelectionViewController;
-			path = LHFontSelectionViewController;
+			path = LHSFontSelectionViewController;
 			sourceTree = "<group>";
 		};
 		37405C2C1861E75B0052213A /* Supporting Files */ = {
