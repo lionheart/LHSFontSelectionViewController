@@ -6,8 +6,9 @@
 //
 //
 
-#import "LHSTableViewCellValue1.h"
 #import "LHSFontSelectionViewController.h"
+#import <LHSTableViewCells/LHSTableViewCellValue1.h>
+#import <LHSCategoryCollection/UIFont+LHSAdditions.h>
 
 static NSString *CellIdentifier = @"Cell";
 
@@ -144,8 +145,9 @@ static NSString *CellIdentifier = @"Cell";
         fontName = self.fontsForSectionIndex[sectionName][indexPath.row];
     }
     
-    cell.textLabel.text = fontName;
-    cell.textLabel.font = [UIFont fontWithName:fontName size:[self.delegate fontSizeForFontSelectionViewController:self] + 4];
+    UIFont *font = [UIFont fontWithName:fontName size:[self.delegate fontSizeForFontSelectionViewController:self] + 4];
+    cell.textLabel.text = font.displayName;
+    cell.textLabel.font = font;
     if ([fontName isEqualToString:self.currentFontName]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
