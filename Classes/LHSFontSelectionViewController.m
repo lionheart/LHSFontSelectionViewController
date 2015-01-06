@@ -149,7 +149,7 @@ static NSString *CellIdentifier = @"Cell";
     }
     
     UIFont *font = [UIFont fontWithName:fontName size:[self.delegate fontSizeForFontSelectionViewController:self] + 4];
-    cell.textLabel.text = font.displayName;
+    cell.textLabel.text = font.lhs_displayName;
     cell.textLabel.font = font;
     if ([fontName isEqualToString:self.currentFontName]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
