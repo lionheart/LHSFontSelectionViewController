@@ -1,0 +1,22 @@
+PODS:
+  - LHSCategoryCollection (0.0.22)
+  - LHSFontSelectionViewController (0.0.5):
+    - LHSCategoryCollection
+    - LHSTableViewCells
+  - LHSTableViewCells (0.0.1)
+
+DEPENDENCIES:
+  - LHSFontSelectionViewController (from `.`)
+
+EXTERNAL SOURCES:
+  LHSFontSelectionViewController:
+    :path: .
+
+SPEC CHECKSUMS:
+  LHSCategoryCollection: 738329e3b0f67a5f981c6e3eb102ce841c6e5ab6
+  LHSFontSelectionViewController: 159db9c65559d2ca89d3472be7eb203e33aa8ff6
+  LHSTableViewCells: 47b4d33382cb4a09960371267e2142970afdfdd6
+
+PODFILE CHECKSUM: 98f6971a013762bd65498838bfb57bdba5f71f75
+
+COCOAPODS: 1.3.1
