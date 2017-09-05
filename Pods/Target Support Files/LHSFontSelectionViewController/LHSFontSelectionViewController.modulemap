@@ -1,0 +1,6 @@
+framework module LHSFontSelectionViewController {
+  umbrella header "LHSFontSelectionViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
