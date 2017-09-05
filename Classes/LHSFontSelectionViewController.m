@@ -6,9 +6,10 @@
 //
 //
 
+@import LHSTableViewCells;
+@import LHSCategoryCollection;
+
 #import "LHSFontSelectionViewController.h"
-#import <LHSTableViewCells/LHSTableViewCellValue1.h>
-#import <LHSCategoryCollection/UIFont+LHSAdditions.h>
 
 static NSString *CellIdentifier = @"Cell";
 
@@ -45,7 +46,6 @@ static NSString *CellIdentifier = @"Cell";
     self.fonts = [NSMutableArray array];
     self.fontsForSectionIndex = [NSMutableDictionary dictionary];
     self.sectionIndexTitles = [NSMutableArray array];
-    self.preferredStatusBarStyle = UIStatusBarStyleLightContent;
     
     if (self.onlyShowPreferredFonts) {
         
@@ -225,4 +225,9 @@ static NSString *CellIdentifier = @"Cell";
     
     return [indexPaths copy];
 }
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 @end
